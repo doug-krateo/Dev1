@@ -47,5 +47,5 @@ SELECT
     pages_points,
     recency_points + duration_points + visits_points + pages_points AS engagement_score,
     10-(Trunc((recency_points + duration_points + visits_points + pages_points)/10)) AS engagement_decile
-    -- Decile is computed 1-10 where 1 is the best/top scores (90-100 points, and then downward to 0 to decile 10)
+    -- Decile is computed 1-10 where 1 is the best/top scores (e.g. Decile 1 => 90-100 points)
 FROM UserActivity;
