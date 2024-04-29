@@ -1,6 +1,8 @@
 USE DATABASE MARKETSMASHER;
 USE WAREHOUSE SCORING_WH;
 
+/* Scoring Code for 100 point scaled score and decile for all prospects based on the sessions data */
+
 CREATE OR REPLACE DYNAMIC TABLE MARKETSMASHER.PUBLIC.PROSPECT_SCORES
   TARGET_LAG = '180 minutes'
   WAREHOUSE = SCORING_WH
