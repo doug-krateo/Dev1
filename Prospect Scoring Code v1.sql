@@ -49,3 +49,8 @@ SELECT
     10-(Trunc((recency_points + duration_points + visits_points + pages_points)/10)) AS engagement_decile
     -- Decile is computed 1-10 where 1 is the best/top scores (e.g. Decile 1 => 90-100 points)
 FROM UserActivity;
+
+/*
+SELECT * FROM PROSPECT_SCORES
+LIMIT 10;
+ */
